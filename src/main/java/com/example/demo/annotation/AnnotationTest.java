@@ -14,10 +14,7 @@ import java.lang.reflect.Method;
 public class AnnotationTest {
 
     public static void main(String[] args)  {
-
             isAnnotation(AnnotationExample.class,kevin.class);
-
-
     }
 
     //判断类是否有某一注解
