@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.annotation.spring.ReverseMessageTestService;
 import com.example.demo.annotation.spring.ServiceClzz;
 import com.example.demo.servicApi.RemoteService;
 import org.junit.jupiter.api.Test;
@@ -24,6 +25,12 @@ class DemoApplicationTests {
 	@Test
 	void beanAnnotation() {
 		remoteService.oprate();
+	}
+
+	@Test
+	void reverseMessageTestService() {
+		ReverseMessageTestService service = new ReverseMessageTestService();
+		service.kevinAnnotatedTest("com.example.demo.annotation.kevin.AnnotationExample");
 	}
 
 }

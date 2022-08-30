@@ -1,10 +1,13 @@
 package com.example.demo.annotation.kevin;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author dou.guo
  * @version AnnotationExample, v 0.1 2022-08-27 10:43 上午 dou.guo Exp $
  */
 @kevin("class annotation")
+@Component
 public class AnnotationExample {
 
     @kevin("field annotation")
@@ -19,5 +22,9 @@ public class AnnotationExample {
 
     public void operation2(){
         System.out.println("operation2");
+    }
+
+    public void printParam(String param){
+        System.out.println(param);
     }
 }

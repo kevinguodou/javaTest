@@ -32,8 +32,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.12</version>
+        </dependency>
 
-		<!--ali hsf-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.65</version>
+		</dependency>
+
+        <!--ali hsf-->
 		<!--<dependency>
 			<groupId>com.taobao.csp</groupId>
 			<artifactId>sentinel</artifactId>
