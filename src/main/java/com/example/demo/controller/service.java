@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class service {
 
     @RequestMapping("/hi")
-    public String toString() {
+    public String returnString() {
         return "HELLOW WORLD";
     }
 }

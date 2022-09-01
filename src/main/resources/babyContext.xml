@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="bodo" scope="singleton" class="com.example.demo.framwork.spring.Pet">
+        <property name="name" value="Bodo" />
+        <property name="age" value="4" />
+        <property name="species" ref="cat" />
+    </bean>
+
+    <bean name="pixel" scope="singleton" class="com.example.demo.framwork.spring.Pet">
+        <property name="name" value="Pixel" />
+        <property name="age" value="11" />
+        <property name="species"  ref="dog" />
+    </bean>
+
+    <bean name="raphael" scope="singleton" class="com.example.demo.framwork.spring.Pet">
+        <property name="name" value="Raphael" />
+        <property name="age" value="6" />
+        <property name="species" ref="cat" />
+    </bean>
+</beans>

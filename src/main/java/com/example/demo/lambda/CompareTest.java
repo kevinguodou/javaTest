@@ -1,7 +1,13 @@
 package com.example.demo.lambda;
 
+
+import com.google.common.collect.Lists;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author dou.guo
@@ -9,9 +15,11 @@ import java.util.Comparator;
  */
 public class CompareTest {
 
+    //参考文章：https://www.liaoxuefeng.com/wiki/1252599548343744/1305207799545890
     public static void main(String[] args) {
         baseClassCompare();
         baseLambdaCompare();
+        baseLambda1Compare();
     }
 
    public static void  baseClassCompare(){
@@ -33,4 +41,17 @@ public class CompareTest {
         System.out.println(array.toString());
     }
 
+    public static void  baseLambda1Compare(){
+        String[] array = {"apple","people","code"};
+        //注意第二个入参没有class的实例，只要传入方法签名即可
+        Arrays.sort(array, String::compareTo);
+        System.out.println(array.toString());
+
+        //真正灵活的地方，都不需要继承接口，只需要方法签名即可
+        List<String> names = Lists.newArrayList("Bob", "Alice", "Tim");
+        List<Person> a = names.stream().map(Person::new).collect(Collectors.toList());
+        System.out.println(a);
+    }
 }
+
+

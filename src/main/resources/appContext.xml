@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="cat" scope="singleton" class="com.example.demo.framwork.spring.Species">
+        <property name="name" value="Cat" />
+    </bean>
+
+    <bean name="dog" scope="singleton" class="com.example.demo.framwork.spring.Species">
+        <property name="name" value="Dog" />
+    </bean>
+
+    <bean name="isabelle" scope="singleton" class="com.example.demo.framwork.spring.Owner">
+        <property name="name" value="Isabelle" />
+        <property name="pets">
+            <list>
+                <ref bean="bodo"/>
+                <ref bean="pixel"/>
+                <ref bean="raphael"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>
+
