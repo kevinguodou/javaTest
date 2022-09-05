@@ -6,6 +6,7 @@ import com.example.demo.framwork.spring.IPet;
 import com.example.demo.framwork.spring.Owner;
 import com.example.demo.framwork.spring.beans.OwnerEditor;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.NoSuchMessageException;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
@@ -20,7 +21,7 @@ import java.util.Locale;
  * @author dou.guo
  * @version Context, v 0.1 2022-09-01 4:37 下午 dou.guo Exp $
  */
-public class AppContext {
+public class AppContext  {
 
     FileSystemXmlApplicationContext ctx;
 
