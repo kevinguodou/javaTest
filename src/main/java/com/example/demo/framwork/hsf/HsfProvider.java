@@ -1,6 +1,7 @@
 package com.example.demo.framwork.hsf;
 
 
+import com.taobao.hsf.app.api.util.HSFApiProviderBean;
 
 /**
  * @author dou.guo
@@ -9,9 +10,9 @@ package com.example.demo.framwork.hsf;
 public class HsfProvider {
 
     public static void main(String[] args) throws Exception {
-       /* HSFApiProviderBean hSFApiProviderBean = new HSFApiProviderBean();
+        HSFApiProviderBean hSFApiProviderBean = new HSFApiProviderBean();
         hSFApiProviderBean.setClientTimeout(3000);
-        hSFApiProviderBean.init();*/
+        hSFApiProviderBean.init();
     }
 
 }

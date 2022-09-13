@@ -17,7 +17,6 @@ public class JdkThreadSafeObject {
 
         //只有静态方法，没有成员变量
         Math.random();
-        aaa.aq=3;
     }
 
 }

@@ -6,9 +6,11 @@ package com.example.demo.framwork.hsf.service;
  */
 
 
+import com.example.demo.framwork.hsf.HsfProvider;
+import com.taobao.hsf.app.spring.util.annotation.HSFProvider;
 import org.springframework.stereotype.Service;
 
-/*@HSFProvider(serviceInterface = HsfProvider.class, clientTimeout = 3000)*/
+@HSFProvider(serviceInterface = HsfProvider.class, clientTimeout = 3000)
 @Service
 public class HsfServiceImpl {
 

@@ -1,6 +1,7 @@
 package com.example.demo.framwork.hsf;
 
 
+import com.taobao.hsf.app.api.util.HSFApiConsumerBean;
 
 /**
  * @author dou.guo
@@ -9,8 +10,10 @@ package com.example.demo.framwork.hsf;
 public class HsfConsumer {
 
     public static void main(String[] args) throws Exception {
-        /*HSFApiConsumerBean consumerbean =new HSFApiConsumerBean();
-        consumerbean.init();*/
+        HSFApiConsumerBean consumerbean =new HSFApiConsumerBean();
+
+
+        consumerbean.init();
     }
 
 }
