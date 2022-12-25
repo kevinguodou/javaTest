@@ -1,4 +1,4 @@
-package com.example.demo.framwork.spring.aop;
+package com.example.demo.designPatterns.aop;
 
 import java.lang.reflect.Proxy;
 
